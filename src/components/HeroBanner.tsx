@@ -8,7 +8,7 @@ const HeroBanner = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={heroBanner}
+          src="https://images.unsplash.com/photo-1683178861337-ca70ef8c0db3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
           alt="Money Heist promotional banner"
           className="h-full w-full object-cover object-top"
         />
@@ -22,7 +22,7 @@ const HeroBanner = () => {
         <div className="max-w-xl animate-fade-in">
           {/* Series Badge */}
           <div className="mb-4 flex items-center gap-2">
-            <span className="font-display text-2xl text-primary">N</span>
+            <span className="font-display text-2xl text-primary">B</span>
             <span className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
               Series
             </span>
@@ -30,27 +30,23 @@ const HeroBanner = () => {
 
           {/* Title */}
           <h1 className="mb-2 font-display text-6xl uppercase leading-none tracking-wider text-foreground text-shadow-lg md:text-7xl lg:text-8xl">
-            Money
-            <span className="text-primary"> Heist</span>
+            Book
+            <span className="text-primary"> Reads</span>
           </h1>
           
-          <p className="mb-6 font-display text-2xl uppercase tracking-widest text-muted-foreground md:text-3xl">
-            Part 4
-          </p>
+          
 
           {/* Metadata */}
           <div className="mb-6 flex items-center gap-4">
             {/* IMDb Rating */}
             <div className="flex items-center gap-2">
-              <span className="rounded bg-imdb px-2 py-0.5 text-xs font-bold text-background">
-                IMDb
-              </span>
+              
               <span className="text-sm font-medium text-foreground">8.8/10</span>
             </div>
 
             {/* Streams */}
             <div className="text-sm text-muted-foreground">
-              <span className="font-semibold text-foreground">2B+</span> Streams
+              <span className="font-semibold text-foreground">2B+ Readers</span> 
             </div>
           </div>
 
@@ -58,11 +54,9 @@ const HeroBanner = () => {
           <div className="flex items-center gap-4">
             <Button variant="play" size="lg">
               <Play className="h-5 w-5 fill-current" />
-              Play
+              Read
             </Button>
-            <Button variant="trailer" size="lg">
-              Watch Trailer
-            </Button>
+            
           </div>
         </div>
       </div>

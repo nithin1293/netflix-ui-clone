@@ -25,7 +25,7 @@ const Sidebar = () => {
     <aside className="fixed left-0 top-0 z-50 flex h-screen w-16 flex-col items-center bg-sidebar py-6 lg:w-20">
       {/* Logo */}
       <div className="mb-8">
-        <span className="font-display text-3xl text-primary lg:text-4xl">N</span>
+        <span className="font-display text-3xl text-primary lg:text-4xl">b</span>
       </div>
 
       {/* Navigation */}

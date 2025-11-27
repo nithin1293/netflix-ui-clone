@@ -105,3 +105,42 @@
     background: var(--gradient-card);
   }
 }
+
+/* Responsive Sidebar CSS */
+.desktop-sidebar {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+}
+
+.main-content {
+  padding-bottom: 5rem;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .desktop-sidebar {
+    display: flex;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  .main-content {
+    padding-bottom: 0;
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    margin-left: 5rem;
+  }
+  
+  .desktop-sidebar {
+    width: 5rem;
+  }
+}

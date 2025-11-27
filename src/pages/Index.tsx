@@ -10,7 +10,7 @@ const Index = () => {
       <Sidebar />
 
       {/* Main Content - Adjusted margins for mobile/desktop */}
-      <main className="pb-20 md:ml-16 md:pb-0 lg:ml-20">
+      <main className="main-content">
         {/* Hero Banner */}
         <HeroBanner />
 

@@ -23,9 +23,9 @@ const MovieRow = ({ title, movies }: MovieRowProps) => {
   };
 
   return (
-    <section className="relative py-4">
+    <section className="relative py-3 sm:py-4">
       {/* Title */}
-      <h2 className="mb-4 px-6 font-display text-2xl tracking-wide text-foreground lg:px-8 lg:text-3xl">
+      <h2 className="mb-3 px-4 font-display text-lg tracking-wide text-foreground sm:mb-4 sm:px-6 sm:text-2xl lg:px-8 lg:text-3xl">
         {title}
       </h2>
 
@@ -47,7 +47,7 @@ const MovieRow = ({ title, movies }: MovieRowProps) => {
         {/* Movies Scroll Container */}
         <div
           ref={scrollRef}
-          className="scrollbar-hide flex gap-3 overflow-x-auto px-6 pb-4 lg:gap-4 lg:px-8"
+          className="scrollbar-hide flex gap-2 overflow-x-auto px-4 pb-4 sm:gap-3 sm:px-6 lg:gap-4 lg:px-8"
         >
           {movies.map((movie, index) => (
             <MovieCard key={movie.id} movie={movie} index={index} />

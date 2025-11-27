@@ -33,7 +33,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Desktop Sidebar - Hidden on mobile */}
-      <aside className="fixed left-0 top-0 z-50 hidden h-screen w-16 flex-col items-center bg-sidebar py-6 md:flex lg:w-20">
+      <aside className="fixed left-0 top-0 z-50 hidden h-screen w-16 flex-col items-center bg-sidebar py-6 sm:flex lg:w-20">
         {/* Logo */}
         <div className="mb-8">
           <span className="font-display text-3xl text-primary lg:text-4xl">b</span>
@@ -88,7 +88,7 @@ const Sidebar = () => {
       </aside>
 
       {/* Mobile Bottom Navigation - Visible only on mobile */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 flex h-16 items-center justify-around border-t border-border/20 bg-sidebar/95 backdrop-blur-lg md:hidden">
+      <nav className="fixed bottom-0 left-0 right-0 z-50 flex h-16 items-center justify-around border-t border-border/20 bg-sidebar/95 backdrop-blur-lg sm:hidden">
         {mobileItems.map((item, index) => {
           const Icon = item.icon;
           const isActive = mobileActiveIndex === index;

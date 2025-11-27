@@ -11,7 +11,7 @@ const MovieCard = ({ movie, index }: MovieCardProps) => {
     <article
       className={cn(
         "group relative flex-shrink-0 cursor-pointer overflow-hidden rounded-md transition-all duration-300 sm:rounded-lg",
-        "w-24 xs:w-28 sm:w-36 md:w-40 lg:w-44",
+        "w-28 sm:w-36 md:w-40 lg:w-44",
         "hover:z-10 sm:hover:scale-110 sm:hover:shadow-2xl sm:hover:shadow-background/50"
       )}
       style={{ animationDelay: `${index * 50}ms` }}

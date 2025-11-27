@@ -9,13 +9,13 @@ const Index = () => {
       {/* Sidebar */}
       <Sidebar />
 
-      {/* Main Content */}
-      <main className="ml-16 lg:ml-20">
+      {/* Main Content - Adjusted margins for mobile/desktop */}
+      <main className="pb-20 md:ml-16 md:pb-0 lg:ml-20">
         {/* Hero Banner */}
         <HeroBanner />
 
         {/* Movie Rows */}
-        <div className="-mt-20 relative z-10 space-y-2 pb-12">
+        <div className="-mt-16 relative z-10 space-y-2 pb-12 md:-mt-20">
           <MovieRow title="New this week" movies={newThisWeek} />
           <MovieRow title="Trending Now" movies={trendingNow} />
         </div>

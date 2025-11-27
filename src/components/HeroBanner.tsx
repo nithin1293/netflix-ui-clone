@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroBanner = () => {
   return (
-    <section className="relative h-[65vh] min-h-[400px] w-full overflow-hidden sm:h-[70vh] sm:min-h-[500px] lg:h-[75vh]">
+    <section className="relative h-[70vh] min-h-[450px] w-full overflow-hidden sm:h-[70vh] sm:min-h-[500px] lg:h-[75vh]">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -17,7 +17,7 @@ const HeroBanner = () => {
       </div>
 
       {/* Mobile Top Navigation */}
-      <div className="absolute left-0 right-0 top-0 z-20 flex items-center justify-between px-4 py-3 md:hidden">
+      <div className="absolute left-0 right-0 top-0 z-20 flex items-center justify-between px-4 py-4 sm:hidden">
         <span className="font-display text-3xl text-primary">B</span>
         <div className="flex items-center gap-6">
           <span className="text-sm font-medium text-foreground">TV Shows</span>
@@ -27,10 +27,10 @@ const HeroBanner = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col justify-end px-4 pb-6 sm:justify-center sm:px-6 sm:pb-0 md:pl-8 lg:pl-28">
+      <div className="relative z-10 flex h-full flex-col items-center justify-end px-4 pb-8 text-center sm:items-start sm:justify-center sm:px-6 sm:pb-0 sm:text-left sm:pl-8 lg:pl-28">
         <div className="max-w-xl animate-fade-in">
           {/* Series Badge */}
-          <div className="mb-2 flex items-center gap-2 sm:mb-4">
+          <div className="mb-2 flex items-center justify-center gap-2 sm:mb-4 sm:justify-start">
             <span className="font-display text-xl text-primary sm:text-2xl">B</span>
             <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground sm:text-sm">
               Series
@@ -44,12 +44,12 @@ const HeroBanner = () => {
           </h1>
 
           {/* Genre Tags - Mobile */}
-          <div className="mb-4 hidden text-xs text-muted-foreground sm:hidden">
+          <div className="mb-4 text-xs text-muted-foreground sm:hidden">
             Ominous • Chilling • Psychological • Scary
           </div>
 
           {/* Metadata */}
-          <div className="mb-4 flex items-center gap-3 sm:mb-6 sm:gap-4">
+          <div className="mb-4 hidden items-center gap-3 sm:mb-6 sm:flex sm:gap-4">
             {/* IMDb Rating */}
             <div className="flex items-center gap-1 sm:gap-2">
               <span className="text-xs font-medium text-foreground sm:text-sm">8.8/10</span>
@@ -65,25 +65,25 @@ const HeroBanner = () => {
           <div className="hidden items-center gap-4 sm:flex">
             <Button variant="play" size="lg">
               <Play className="h-5 w-5 fill-current" />
-              Read
+              Play
             </Button>
           </div>
 
           {/* Actions - Mobile (like reference image) */}
-          <div className="flex items-center justify-center gap-8 sm:hidden">
-            <button className="flex flex-col items-center gap-1">
-              <Plus className="h-6 w-6 text-foreground" />
-              <span className="text-[10px] text-muted-foreground">My List</span>
+          <div className="flex w-full items-center justify-center gap-10 sm:hidden">
+            <button className="flex flex-col items-center gap-1.5">
+              <Plus className="h-7 w-7 text-foreground" />
+              <span className="text-[11px] text-muted-foreground">My List</span>
             </button>
             
-            <Button variant="play" size="default" className="px-8">
-              <Play className="h-4 w-4 fill-current" />
+            <Button variant="play" size="default" className="px-10 py-2.5">
+              <Play className="h-5 w-5 fill-current" />
               Play
             </Button>
             
-            <button className="flex flex-col items-center gap-1">
-              <Info className="h-6 w-6 text-foreground" />
-              <span className="text-[10px] text-muted-foreground">Info</span>
+            <button className="flex flex-col items-center gap-1.5">
+              <Info className="h-7 w-7 text-foreground" />
+              <span className="text-[11px] text-muted-foreground">Info</span>
             </button>
           </div>
         </div>

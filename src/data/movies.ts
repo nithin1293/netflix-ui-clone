@@ -29,6 +29,8 @@ export const newThisWeek: Movie[] = [
   { id: 5, title: "One of Our Kind", poster: "https://images.penguinrandomhouse.com/cover/9780593470688", year: 2022, rating: 7.6 },
   { id: 6, title: "One Week Author", poster: "https://m.media-amazon.com/images/I/61kzvUgnKWL._AC_UF1000,1000_QL80_.jpg", year: 2019, rating: 9.1 },
   { id: 7, title: "Hundered Years", poster: "https://festivedeal.com/image/cache/data/Product%20Image/Books/Fiction%20Books/one-hundred-years-of-solitude-2007-gabriel-garcia-marquez/one-hundred-years-of-solitude-2007-gabriel-garcia-marquez-1-500x554.jpg", year: 2023, rating: 8.0 },
+  { id: 8, title: "Born to write", poster: "https://m.media-amazon.com/images/I/71xoOPLEHxL._AC_UF1000,1000_QL80_.jpg", year: 2023, rating: 8.0 },
+  { id: 9, title: "To kill", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYM5KZ8mbAqUZP4gpbre2ychYr9VJOHvDr-g&s", year: 2023, rating: 8.0 },
 ];
 
 export const trendingNow: Movie[] = [
@@ -39,4 +41,6 @@ export const trendingNow: Movie[] = [
   { id: 12, title: "The Wren", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfpJvSD4IHz6bCvY83D8UAgMKHlKtKrQJ4Q&s", year: 2022, rating: 7.9 },
   { id: 13, title: "Good Left Undone", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjUg7wh45jOy0Sp9oxwfm1reorH-9a_x98xA&s", year: 2021, rating: 8.6 },
   { id: 14, title: "Death os The Author", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZjsGVm-YGPmV6F4Zpxh0runamdfDt7S9YA&s", year: 2022, rating: 8.8 },
+  { id: 15, title: "The Indian Novel", poster: "https://bhaviksarkhedi.com/wp-content/uploads/2024/01/Shashi-Tharoor.webp", year: 2022, rating: 8.8 },
+  { id: 16, title: "The Merchant", poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSAga4eX6wnaH7VU1YxTjR17_umBh_pKSieA&s", year: 2022, rating: 8.8 },
 ];

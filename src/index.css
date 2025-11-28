@@ -122,16 +122,16 @@
 
 @media (min-width: 768px) {
   .desktop-sidebar {
-    display: flex;
+    display: hidden;
   }
   
   .mobile-nav {
-    display: none;
+    display: flex;
   }
   
   .main-content {
     padding-bottom: 0;
-    margin-left: 4rem;
+    
   }
 }
 
@@ -139,8 +139,48 @@
   .main-content {
     margin-left: 5rem;
   }
+  .mobile-nav {
+    display: none;
+  }
   
   .desktop-sidebar {
-    width: 5rem;
+    display: flex;
   }
 }
+/* MOBILE NAV - Visible only on phones */
+
+@media (min-width: 768px) {
+  .mobile-top {
+    display: flex;  /* Hide for tablets & laptops */
+  }
+  
+}
+@media (min-width: 1024px) {
+  .mobile-top {
+    display: none;  /* Hide for tablets & laptops */
+  }
+  
+}
+/* MOBILE CONTENT CENTERING (Netflix style hero) */
+@media (min-width: 767px) {
+  .hero-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* horizontal center */
+    justify-content:center; /* bottom centered */
+    text-align: center;        /* center text */
+    padding-bottom: 4rem;      /* space above bottom buttons */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* desktop left alignment */
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+

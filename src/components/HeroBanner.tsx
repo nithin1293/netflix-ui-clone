@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroBanner = () => {
   return (
-    <section className="relative h-[70vh] min-h-[450px] w-full overflow-hidden sm:h-[70vh] sm:min-h-[500px] lg:h-[75vh]">
+    <section className="relative h-[60vh] min-h-[450px] w-full overflow-hidden sm:h-[65vh] sm:min-h-[450px] lg:h-[70vh]">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -17,17 +17,20 @@ const HeroBanner = () => {
       </div>
 
       {/* Mobile Top Navigation */}
-      <div className="absolute left-0 right-0 top-0 z-20 flex items-center justify-between px-4 py-4 sm:hidden">
-        <span className="font-display text-3xl text-primary">B</span>
-        <div className="flex items-center gap-6">
-          <span className="text-sm font-medium text-foreground">TV Shows</span>
-          <span className="text-sm font-medium text-foreground">Movies</span>
-          <span className="text-sm font-medium text-foreground">My List</span>
-        </div>
-      </div>
+      {/* Mobile Top Navigation */}
+<div className="mobile-top absolute left-0 right-0 top-0 z-20 flex items-center justify-between px-4 py-4">
+  <span className="font-display text-3xl text-primary">B</span>
+
+  <div className="pointer-events-none absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-40">
+    <span className="text-sm font-medium text-foreground">Horror</span>
+    <span className="text-sm font-medium text-foreground">Inspiration</span>
+    <span className="text-sm font-medium text-foreground">My List</span>
+  </div>
+</div>
+
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-end px-4 pb-8 text-center sm:items-start sm:justify-center sm:px-6 sm:pb-0 sm:text-left sm:pl-8 lg:pl-28">
+      <div className=" hero-content-wrapper relative z-10 flex h-full flex-col px-4 pb-8 lg:pl-28 ">
         <div className="max-w-xl animate-fade-in">
           {/* Series Badge */}
           <div className="mb-2 flex items-center justify-center gap-2 sm:mb-4 sm:justify-start">
@@ -38,13 +41,13 @@ const HeroBanner = () => {
           </div>
 
           {/* Title */}
-          <h1 className="mb-2 font-display text-4xl uppercase leading-none tracking-wider text-foreground text-shadow-lg sm:text-5xl md:text-6xl lg:text-8xl">
+          <h1 className="mb-2 font-display text-4xl pr-16 uppercase leading-none tracking-wider text-foreground text-shadow-lg sm:text-5xl md:text-6xl lg:text-8xl">
             Book
             <span className="text-primary"> Reads</span>
           </h1>
 
           {/* Genre Tags - Mobile */}
-          <div className="mb-4 text-xs text-muted-foreground sm:hidden">
+          <div className="mb-4 text-xl  text-muted-foreground sm:center sm:mb-6 sm:text-sm pr-8">
             Ominous • Chilling • Psychological • Scary
           </div>
 
@@ -65,7 +68,7 @@ const HeroBanner = () => {
           <div className="hidden items-center gap-4 sm:flex">
             <Button variant="play" size="lg">
               <Play className="h-5 w-5 fill-current" />
-              Play
+              Read
             </Button>
           </div>
 
